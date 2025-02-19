@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Sofia Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: Garamond, ui-serif, serif;
+}
+
+@layer components {
+  .marker-yellow-300 {
+    @apply px-[0.125em] bg-gradient-to-b from-white from-50% to-yellow-300 to-50%;
+  }
+  a.marker-yellow-300 {
+    @apply hover:from-yellow-300;
+  }
+  .hanging-\[4em\] {
+    @apply pl-[4em] -indent-[4em];
+  }
+  .underline-blue-600 {
+    @apply underline underline-offset-2 text-blue-600;
+  }
+  .print-muted {
+    @apply print:no-underline print:font-light print:text-black;
+  }
+}
